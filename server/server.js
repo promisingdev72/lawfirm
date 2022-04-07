@@ -5,7 +5,7 @@ const path = require("path");
 const nodemailer = require("nodemailer");
 const port = process.env.PORT || 8080;
 const bodyParser = require("body-parser");
-const publicPath = path.join(__dirname, "../client");
+const publicPath = path.join(__dirname, "../build");
 
 app.use(express.static(publicPath));
 app.get("*", (req, res) => {
